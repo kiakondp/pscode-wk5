@@ -12,7 +12,17 @@ print on the screen the sum of those 2 numbers
 
 // Exercise 2: Check if a Number is Even or Odd
 
-(Your pseudocode here)
+ // Function to check if a number is Even or Odd
+function check Even Or Odd(number):
+    if number modulo 2 equals 0 then
+        return "Even"
+    else
+        return "Odd"
+
+ // Example usage:
+input number
+result = check Even Or Odd(number)
+output "The number ", number, " is ", result
 
 // Exercise 3: 
 Write pseudo code that will perform the following.    
@@ -22,6 +32,57 @@ b) Calculate the average of the five numbers.
 c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
 d) Write out the results found from steps b and c with a message describing what they are
 
-(Your pseudocode here)
+ // Initialize variables
+let num1, num2, num3, num4, num5 be integers
+let sum, average be float
+let smallest, largest be integers
+
+ // Step a: Read in 5 separate numbers
+input num1, num2, num3, num4, num5
+
+ // Step b: Calculate the average of the five numbers
+sum = num1 + num2 + num3 + num4 + num5
+average = sum / 5
+
+ // Step c: Find the smallest (minimum) and largest (maximum) of the five entered numbers
+smallest = num1  // Assume num1 is initially the smallest
+largest = num1   // Assume num1 is initially the largest
+
+if num2 < smallest then
+    smallest = num2
+end if
+
+if num2 > largest then
+    largest = num2
+end if
+
+if num3 < smallest then
+    smallest = num3
+end if
+
+if num3 > largest then
+    largest = num3
+end if
+
+if num4 < smallest then
+    smallest = num4
+end if
+
+if num4 > largest then
+    largest = num4
+end if
+
+if num5 < smallest then
+    smallest = num5
+end if
+
+if num5 > largest then
+    largest = num5
+end if
+
+ // Step d: Write out the results found from steps b and c
+output "The average of the five numbers is: ", average
+output "The smallest number is: ", smallest
+output "The largest number is: ", largest
 
 -- END --
